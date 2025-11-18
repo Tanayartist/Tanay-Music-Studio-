@@ -1,5 +1,4 @@
-
-export type GenerationType = 'music' | 'lyrics' | 'beats' | 'voice';
+export type GenerationType = 'music' | 'lyrics' | 'beats' | 'voice' | 'song';
 export type ActiveTab = GenerationType | 'library';
 
 export interface Option {

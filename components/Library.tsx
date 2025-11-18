@@ -1,4 +1,3 @@
-
 import React, { useRef, useState } from 'react';
 import type { LibraryItem } from '../types';
 import { decode, decodeAudioData } from '../utils/audioUtils';
@@ -63,6 +62,7 @@ const LibraryCard: React.FC<{ item: LibraryItem }> = ({ item }) => {
             case 'lyrics': return 'bg-pink-500/20 text-pink-300';
             case 'beats': return 'bg-purple-500/20 text-purple-300';
             case 'voice': return 'bg-green-500/20 text-green-300';
+            case 'song': return 'bg-red-500/20 text-red-300';
             default: return 'bg-gray-500/20 text-gray-300';
         }
     };

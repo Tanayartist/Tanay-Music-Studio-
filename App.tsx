@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Tabs from './components/Tabs';
@@ -6,6 +5,7 @@ import LyricsGenerator from './components/LyricsGenerator';
 import MusicGenerator from './components/MusicGenerator';
 import BeatGenerator from './components/BeatGenerator';
 import VoiceGenerator from './components/VoiceGenerator';
+import SongGenerator from './components/SongGenerator';
 import Library from './components/Library';
 import type { ActiveTab, LibraryItem } from './types';
 
@@ -53,6 +53,8 @@ const App: React.FC = () => {
         return <BeatGenerator addToLibrary={addToLibrary} />;
       case 'voice':
         return <VoiceGenerator addToLibrary={addToLibrary} />;
+      case 'song':
+        return <SongGenerator addToLibrary={addToLibrary} />;
       case 'library':
         return <Library items={libraryItems} />;
       default:
