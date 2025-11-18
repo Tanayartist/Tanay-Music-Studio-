@@ -1,0 +1,7 @@
+{
+  "name": "Tanay Music Studio",
+  "description": "An AI-powered music creation suite to generate lyrics, music descriptions, beat ideas, and vocal samples. Bring your musical ideas to life with prompts for various genres, moods, and even specific artist styles.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
